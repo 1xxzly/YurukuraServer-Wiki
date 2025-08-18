@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <img src="image.png" alt="ロゴ" class="site-logo" />
 <div class="center-title">
   <h1>ゆるっとクラフトサーバー公式Wiki</h1>
-  <p>このサイトは、ゆるっとクラフトサーバーの公式情報・ルール・参加方法などをまとめたWikiです。</p>
+  <p>最新情報・ルール・参加方法などをまとめたWikiです。</p>
 </div>
 
 <div class="top-buttons">
