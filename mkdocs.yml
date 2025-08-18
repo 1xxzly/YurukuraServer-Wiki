@@ -1,0 +1,15 @@
+site_name: ゆるっとクラフトサーバー公式Wiki
+theme:
+  name: mkdocs
+  logo: logo.png
+extra_css:
+  - custom.css
+extra_javascript:
+  - custom.js
+nav:
+  - ホーム: index.md
+  - 使用可能コマンドについて: commands.md
+  - 導入機能一覧: features.md
+  - サーバールール・規約: rules.md
+  - よくある質問: faq.md
+  - お問い合わせ: contact.md
