@@ -5,7 +5,7 @@
   .navbar-nav > li > a[href*="discord"] {
     display: none !important;
   }
-  
+
 }
 .site-logo {
   display: none !important;
@@ -205,13 +205,6 @@ li > a[href*="zahyou"] {
 @media (max-width: 600px) {
   .top-buttons {
     display: none !important;
-  }
-}
-@media (max-width: 600px) {
-  .top-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
   }
 }
 
