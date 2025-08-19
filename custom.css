@@ -163,6 +163,16 @@ body {
   color: #fff !important;
 }
 
+/* --- スマホ以外でnav追加メニューを非表示 --- */
+@media (min-width: 601px) {
+  .navbar-nav > li > a[href*="serverjoin"],
+  .navbar-nav > li > a[href*="news"],
+  .navbar-nav > li > a[href*="board"],
+  .navbar-nav > li > a[href*="discord"] {
+    display: none !important;
+  }
+}
+
 /* zahyou.md（座標共有）を全メニューから非表示 */
 .navbar-nav > li > a[href*="zahyou"],
 li > a[href*="zahyou"] {
