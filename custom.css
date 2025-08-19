@@ -1,3 +1,8 @@
+@media (max-width: 600px) {
+  .top-buttons {
+    display: none !important;
+  }
+}
 @media (min-width: 601px) {
   .navbar-nav > li > a[href*="serverjoin"],
   .navbar-nav > li > a[href*="news"],
