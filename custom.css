@@ -163,6 +163,12 @@ body {
   color: #fff !important;
 }
 
+/* zahyou.md（座標共有）を全メニューから非表示 */
+.navbar-nav > li > a[href*="zahyou"],
+li > a[href*="zahyou"] {
+  display: none !important;
+}
+
 /* 検索・ページ送りボタンの色も調整 */
 .form-control, .btn, .btn-default {
   background-color: #fafafa !important;
