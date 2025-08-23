@@ -132,9 +132,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(32, 255, 80, 0.53), 0 0 2px #0008; margin-top:40px;">主な機能</h2>
 <div class="features-list">
-  <div class="feature-btn">経済の概念</div>
+  <div class="feature-btn" id="economy-btn">経済の概念</div>
+
+<!-- book.pngとテキストを重ねて中央表示するUI -->
+<div id="book-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:none;">
+  <!-- 余分なimgタグを削除 -->
+    <img src="../icon/book.png" alt="book" style="height:740px;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;" />
+  <div id="book-popup-text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.5em;font-weight:bold;color:#222;text-shadow:2px 2px 6px #fff,0 0 8px #fff8;white-space:nowrap;">経済システムとはゲーム内に通貨が追加され、<br>専用ショップなど様々なものを買うことができます。<br>稼ぐには職業に就く必要があります。</div>
+</div>
   <div class="feature-btn">所持金アイテム化機能</div>
-  <div class="feature-btn">メニューブック機能</div>
   <div class="feature-btn">職業機能</div>
   <div class="feature-btn">季節の概念</div>
   <div class="feature-btn">育成可能ペット機能</div>

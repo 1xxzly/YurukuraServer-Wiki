@@ -1,3 +1,16 @@
+// featuresページ「経済の概念」ボタンにホバーでbook.png＋テキスト表示
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('economy-btn');
+  var wrap = document.getElementById('book-popup-wrap');
+  if (btn && wrap) {
+    btn.addEventListener('mouseenter', function() {
+      wrap.style.display = 'block';
+    });
+    btn.addEventListener('mouseleave', function() {
+      wrap.style.display = 'none';
+    });
+  }
+});
 // contactページでbodyにcontact-pageクラスを自動付与
 document.addEventListener('DOMContentLoaded', function() {
   if (location.pathname.match(/\/contact(\/|\.html)?$/)) {

@@ -1,3 +1,11 @@
+.feature-btn {
+  background: url('icon/Blank_Template_Gui_1Row.png') center/cover no-repeat, #438119 !important;
+  color: #111 !important;
+}
+.feature-btn:hover {
+  background: url('icon/Blank_Template_Gui_1Row.png') center/cover no-repeat, #6baa3b;
+  color: #111 !important;
+}
 body.contact-page {
   background-image: url('../novaskin-wallpaper-petting.png') !important;
   background-size: cover !important;
