@@ -1,3 +1,17 @@
+body.contact-page {
+  background-image: url('../novaskin-wallpaper-petting.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.news-page {
+  background-image: url('../icon/book.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 @media (max-width: 600px) {
   .top-buttons {
     display: none !important;
@@ -67,7 +81,7 @@ body.rules-page ::selection, body.rules-page *::selection {
   background: #1976d2 !important;
 }
 body.rules-page {
-  background-image: url('../rules_image.png') !important;
+  background-image: url('../wallpaper_minecraft_mineshaft_2058x1440.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -87,11 +101,12 @@ hr {
   display: none !important;
 }
 /* マイクラ風カラーのシンプルなボタン */
-.mc-btn {
+/* ボタン背景をBlank_Template_Gui_1Row.pngに */
+.mc-btn, .feature-btn, .command-title-btn, .btn, .btn-default {
   display: inline-block;
-  padding: 12px 28px;
-  background: #438119;
-  color: #fff;
+  padding: 8px 18px;
+  background: url('icon/Blank_Template_Gui_1Row.png') center/cover no-repeat, #438119;
+  color: #111 !important;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -100,8 +115,8 @@ hr {
   border: 2px solid #3e5c23;
   transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
 }
-.mc-btn:hover {
-  background: #6baa3b;
+.mc-btn:hover, .feature-btn:hover, .command-title-btn:hover, .btn:hover, .btn-default:hover {
+  background: url('icon/Blank_Template_Gui_1Row.png') center/cover no-repeat, #6baa3b;
   box-shadow: 0 2px #3e5c23;
   transform: translateY(2px);
 }
@@ -194,7 +209,7 @@ li > a[href*="zahyou"] {
 }
 
 /* 検索・ページ送りボタンの色も調整 */
-.form-control, .btn, .btn-default {
+.form-control {
   background-color: #fafafa !important;
   color: #fff !important;
   border: none !important;

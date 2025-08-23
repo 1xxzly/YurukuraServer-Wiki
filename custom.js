@@ -1,3 +1,15 @@
+// contactページでbodyにcontact-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/contact(\/|\.html)?$/)) {
+    document.body.classList.add('contact-page');
+  }
+});
+// newsページでbodyにnews-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/news(\/|\.html)?$/)) {
+    document.body.classList.add('news-page');
+  }
+});
 // 背景GIFの表示・非表示を切り替えるスクリプト
 window.addEventListener('DOMContentLoaded', function() {
   const gif = document.getElementById('bgGif');
@@ -21,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   var bgm = document.getElementById('bgm');
   if (bgm) {
-    bgm.volume = 0.05;
+    bgm.volume = 0.025;
   }
   var btn = document.getElementById('bgm-toggle');
   if (bgm && btn) {
