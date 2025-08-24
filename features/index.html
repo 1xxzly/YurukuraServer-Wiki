@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(32, 255, 80, 0.53), 0 0 2px #0008; margin-top:40px;">主な機能</h2>
+<h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(235, 235, 235, 0.53), 0 0 2px #0008; margin-top:40px;">主な機能</h2>
 <div class="features-list">
   <div class="feature-btn" id="economy-btn">経済の概念</div>
 
@@ -140,37 +140,249 @@ document.addEventListener('DOMContentLoaded', function() {
     <img src="../icon/book.png" alt="book" style="height:740px;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;" />
   <div id="book-popup-text" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.5em;font-weight:bold;color:#222;text-shadow:2px 2px 6px #fff,0 0 8px #fff8;white-space:nowrap;">経済システムとはゲーム内に通貨が追加され、<br>専用ショップなど様々なものを買うことができます。<br>稼ぐには職業に就く必要があります。</div>
 </div>
-  <div class="feature-btn">所持金アイテム化機能</div>
-  <div class="feature-btn">職業機能</div>
+  <div class="feature-btn">所持金アイテム化</div>
+  <div class="feature-btn">職業　</div>
   <div class="feature-btn">季節の概念</div>
-  <div class="feature-btn">育成可能ペット機能</div>
-  <div class="feature-btn">カスタムエンチャント</div>
-  <div class="feature-btn">コスメティック機能</div>
-  <div class="feature-btn">カジノ機能</div>
-  <div class="feature-btn">悪魔の実機能</div>
-  <div class="feature-btn">チェストロック機能</div>
-  <div class="feature-btn">お絵かき機能</div>
-  <div class="feature-btn">定期アナウンス機能</div>
-  <div class="feature-btn">ログインボーナス機能</div>
-  <div class="feature-btn">スキン変更機能などなど</div>
-  <div class="feature-btn">モンスターAI強化機能</div>
+  <div class="feature-btn">育成可能ペット</div>
+  <div class="feature-btn">悪魔の実</div>
+  <div class="feature-btn" id="custom-enchant-btn">カスタムエンチャント</div>
+  <div class="feature-btn" id="custom-enchant2-btn">カスタムエンチャント2</div>
+  <div class="feature-btn">コスメティック</div>
+  <div class="feature-btn">カジノ</div>
+  <div class="feature-btn">チェストロック</div>
+  <div class="feature-btn">お絵かき</div>
+  <div class="feature-btn">ログインボーナス</div>
+  <div class="feature-btn">スキン変更などなど</div>
+  <div class="feature-btn">モンスターAI強化</div>
   <div class="feature-btn">ワンブロック</div>
-  <div class="feature-btn">ディスコード連携機能</div>
+  <div class="feature-btn">ディスコード連携</div>
 </div>
+<!-- Empty_Toolip.pngと説明テキストを重ねて表示するUI（カスタムエンチャント2用） -->
+<div id="tooltip2-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:auto;padding:0;margin:0;box-sizing:border-box;">
+    <div id="tooltip2-img-wrap" style="position:relative;display:inline-block;padding:0;margin:0;box-sizing:border-box;">
+  <img src="../icon/Empty_Toolip.png" alt="tooltip" style="width:100%;max-width:520px;min-width:320px;height:420px;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;pointer-events:none;padding:0;margin:0;box-sizing:border-box;" />
+  <div id="tooltip2-text" style="position:absolute;top:0;left:0;width:100%;max-height:420px;display:block;padding:24px 32px;box-sizing:border-box;font-size:1.1em;font-weight:bold;color:#a100ff;text-shadow:1px 1px 2px #fff4;overflow-y:auto;pointer-events:auto;">
+  <div style="text-align:left;width:100%;max-width:740px;">
+</ul>
+<b style="color:#ffe600;">有効なカスタムエンチャント一覧（CEメニューブックから入手）</b><br>
+<ul style="padding-left:1.2em;margin:0;">
+<li><b style="color:#00eaff;">アシッドレイン</b><span style="color:#fff;">：周囲3ブロック以内の敵に短時間の毒効果を与えます。</span></li>
+<li><b style="color:#ff5a36;">アドレナリン</b><span style="color:#fff;">：体力が低下しているとき、スピードブーストを得られる可能性があります。</span></li>
+<li><b style="color:#00ffb7;">エンジェル</b><span style="color:#fff;">：近くの派閥メンバーを回復する。このアイテムを装備していると効果発動。</span></li>
+<li><b style="color:#ffe600;">反重力</b><span style="color:#fff;">：装備すると高くジャンプできる効果を付与する。</span></li>
+<li><b style="color:#ffb700;">自動精錬</b><span style="color:#fff;">：鉱石を自動で精錬する確率がある。より多くのインゴットを得られる。</span></li>
+<li><b style="color:#ff2aff;">バトルクライ</b><span style="color:#fff;">：戦闘中に10%(+レベルごとに5%)の確率で周囲のプレイヤーを後方へ吹き飛ばす。</span></li>
+<li><b style="color:#ffea00;">ビーキーパー</b><span style="color:#fff;">：ピンチの時にミツバチを召喚する。</span></li>
+<li><b style="color:#ff5a36;">バーサーク</b><span style="color:#fff;">：一定確率で自分に攻撃力アップと採掘疲労を付与する。</span></li>
+<li><b style="color:#bbb;">ブラスト</b><span style="color:#fff;">：レベルに応じて3×レベル×3の範囲のブロックを同時に破壊する。</span></li>
+<li><b style="color:#bbb;">ブレスド</b><span style="color:#fff;">：一定確率ですべてのデバフ効果を解除する。</span></li>
+<li><b style="color:#bbb;">ブラインドネス</b><span style="color:#fff;">：敵に暗闇効果を付与する確率がある。</span></li>
+<li><b style="color:#bbb;">ブリザード</b><span style="color:#fff;">：敵に3ブロック以内のスロウ効果を短時間付与する。</span></li>
+<li><b style="color:#bbb;">爆発</b><span style="color:#fff;">：矢が当たった場所にTNTが爆発することがある。</span></li>
+<li><b style="color:#bbb;">バーンシールド</b><span style="color:#fff;">：装備時に火炎耐性を付与する。</span></li>
+<li><b style="color:#bbb;">カクタス</b><span style="color:#fff;">：攻撃してきた相手にダメージを与えることがある。</span></li>
+<li><b style="color:#bbb;">チャージ</b><span style="color:#fff;">：敵プレイヤーを倒すと自分と周囲の味方にスピードアップを付与する。</span></li>
+<li><b style="color:#bbb;">コマンダー</b><span style="color:#fff;">：装備者と近くの派閥メンバーにヘイスト効果を付与する。</span></li>
+<li><b style="color:#bbb;">コンフュージョン</b><span style="color:#fff;">：敵に混乱効果を付与することがある。</span></li>
+<li><b style="color:#bbb;">クラウチ</b><span style="color:#fff;">：戦闘中、しゃがむとレベルに応じてダメージ軽減。</span></li>
+<li><b style="color:#bbb;">カースド</b><span style="color:#fff;">：敵に採掘疲労を付与することがある。</span></li>
+<li><b style="color:#bbb;">サイボーグ</b><span style="color:#fff;">：スピード、攻撃力、ジャンプ力を付与し敵を倒すのに役立つ。</span></li>
+<li><b style="color:#bbb;">デーモンフォージド</b><span style="color:#fff;">：戦闘中、耐久値ダメージを増加させる。</span></li>
+<li><b style="color:#bbb;">ディサーマー</b><span style="color:#fff;">：敵の防具をランダムで1箇所外すことがある。</span></li>
+<li><b style="color:#bbb;">ディスオーダー</b><span style="color:#fff;">：敵のホットバーのアイテムの順番を入れ替えることがある。</span></li>
+<li><b style="color:#bbb;">ディジー</b><span style="color:#fff;">：敵に混乱効果を付与することがある。</span></li>
+<li><b style="color:#bbb;">ドクター</b><span style="color:#fff;">：攻撃した味方を回復することがある。</span></li>
+<li><b style="color:#bbb;">ダブルダメージ</b><span style="color:#fff;">：ダメージを2倍にすることがある。</span></li>
+<li><b style="color:#bbb;">ドランク</b><span style="color:#fff;">：装備すると、力強さ、採掘疲労、鈍足を付与する。</span></li>
+<li><b style="color:#bbb;">エンライテンド</b><span style="color:#fff;">：攻撃を受けている間に回復することがある。</span></li>
+<li><b style="color:#bbb;">エクスキュート</b><span style="color:#fff;">：敵の体力が少ないときに力強さを得ることがある。</span></li>
+<li><b style="color:#bbb;">エクスペリエンス</b><span style="color:#fff;">：鉱石から得られる経験値が2倍以上になることがある。</span></li>
+<li><b style="color:#bbb;">ファミッシュド</b><span style="color:#fff;">：戦闘中、敵に空腹状態を付与することがある。</span></li>
+<li><b style="color:#bbb;">ファストターン</b><span style="color:#fff;">：ダメージを増加させることがある。</span></li>
+<li><b style="color:#bbb;">フィードミー</b><span style="color:#fff;">：戦闘中に回復することがある。</span></li>
+<li><b style="color:#bbb;">フォーティファイ</b><span style="color:#fff;">：敵に弱体効果を付与することがある。</span></li>
+<li><b style="color:#bbb;">フリーズ</b><span style="color:#fff;">：敵に鈍足効果を付与することがある。</span></li>
+<li><b style="color:#bbb;">ファーネス</b><span style="color:#fff;">：鉱石を必ずブロックではなくアイテムに変える。</span></li>
+<li><b style="color:#bbb;">ギアーズ</b><span style="color:#fff;">：装備するとスピードアップ効果を与える。</span></li>
+<li><b style="color:#bbb;">グローイング</b><span style="color:#fff;">：装備すると夜間視力を付与する。</span></li>
+<li><b style="color:#bbb;">グリーンサム</b><span style="color:#fff;">：苗木を右クリックすると、確率で植木を完全に成長させるが、クワの耐久度が減少する。</span></li>
+<li><b style="color:#bbb;">ハーベスター</b><span style="color:#fff;">：成熟した作物を壊すと、3x3範囲内のすべての成熟した作物を同時に壊す。</span></li>
+<li><b style="color:#bbb;">ヘイスト</b><span style="color:#fff;">：手に持っていると採掘速度上昇効果を付与する。</span></li>
+<li><b style="color:#bbb;">ハルク</b><span style="color:#fff;">：装備している間、攻撃力上昇、耐性、鈍足効果を与える。</span></li>
+<li><b style="color:#bbb;">アイスフリーズ</b><span style="color:#fff;">：敵に鈍足効果を付与することがある。</span></li>
+<li><b style="color:#bbb;">インプラント</b><span style="color:#fff;">：装備中に移動すると、空腹度が増加し始める。</span></li>
+<li><b style="color:#bbb;">インフェステーション</b><span style="color:#fff;">：ピンチのときにエンダーマイトとシルバーフィッシュを召喚する。</span></li>
+<li><b style="color:#bbb;">インクイジティブ</b><span style="color:#fff;">：エンチャントレベルに応じて経験値を2倍以上獲得することがある。</span></li>
+<li><b style="color:#bbb;">インソムニア</b><span style="color:#fff;">：混乱、採掘疲労、鈍足を付与するが、高確率でダメージが2倍になる。</span></li>
+<li><b style="color:#bbb;">インティミデイト</b><span style="color:#fff;">：3ブロック以内の敵に短時間弱体化を付与する。</span></li>
+<li><b style="color:#bbb;">リーダーシップ</b><span style="color:#fff;">：味方が周囲にいると攻撃力が上がる。</span></li>
+<li><b style="color:#bbb;">ライフスティール</b><span style="color:#fff;">：敵から体力を吸収することがある。</span></li>
+<li><b style="color:#bbb;">ライトウェイト</b><span style="color:#fff;">：戦闘中に採掘速度上昇を付与することがある。</span></li>
+<li><b style="color:#bbb;">ライトニングアロー</b><span style="color:#fff;">：矢が落ちた場所に稲妻を落とすことがある。</span></li>
+<li><b style="color:#bbb;">マニューバー</b><span style="color:#fff;">：攻撃を回避することがある。</span></li>
+<li><b style="color:#bbb;">マーメイド</b><span style="color:#fff;">：装備していると水中呼吸が得られる。</span></li>
+<li><b style="color:#bbb;">モルテン</b><span style="color:#fff;">：敵を炎上させることがある。</span></li>
+<li><b style="color:#bbb;">マルチアロー</b><span style="color:#fff;">：複数の矢を同時に放つことがある。</span></li>
+<li><b style="color:#bbb;">ネクロマンサー</b><span style="color:#fff;">：ピンチのときにゾンビを召喚する。</span></li>
+<li><b style="color:#bbb;">忍者</b><span style="color:#fff;">：装備すると速度と体力が上昇する。</span></li>
+<li><b style="color:#bbb;">ナーサリー</b><span style="color:#fff;">：歩いている間に体力が回復することがある。</span></li>
+<li><b style="color:#bbb;">ニュートリション</b><span style="color:#fff;">：戦闘中に空腹度を回復することがある。</span></li>
+<li><b style="color:#bbb;">オブリタレイト</b><span style="color:#fff;">：敵を後方に吹き飛ばすことがある。</span></li>
+<li><b style="color:#bbb;">オーバーロード</b><span style="color:#fff;">：装備すると体力が上昇する。</span></li>
+<li><b style="color:#bbb;">オキシジェネイト</b><span style="color:#fff;">：手に持っている間水中呼吸が得られる。</span></li>
+<li><b style="color:#bbb;">ペインギバー</b><span style="color:#fff;">：敵に毒を与える確率があります。</span></li>
+<li><b style="color:#bbb;">パラライズ</b><span style="color:#fff;">：一定確率で敵に高い採掘疲労と鈍足を与えます。</span></li>
+<li><b style="color:#bbb;">ピアッシング</b><span style="color:#fff;">：一定確率で敵に2倍の大ダメージを与えます。</span></li>
+<li><b style="color:#bbb;">プランター</b><span style="color:#fff;">：土を耕すとオフハンドまたはホットバーの右から左の順にある種を自動で植えます。</span></li>
+<li><b style="color:#bbb;">引き寄せ</b><span style="color:#fff;">：攻撃時、敵が自分に向かって吹き飛ぶことがあります。</span></li>
+<li><b style="color:#bbb;">ラディアント</b><span style="color:#fff;">：3ブロック以内の敵に短時間火をつけます。</span></li>
+<li><b style="color:#bbb;">激怒</b><span style="color:#fff;">：戦闘を続けるほど攻撃力が上昇します。</span></li>
+<li><b style="color:#bbb;">粉砕</b><span style="color:#fff;">：一定確率でダメージが2倍になります。</span></li>
+<li><b style="color:#bbb;">報復</b><span style="color:#fff;">：近くの味方が倒されるとスピード、再生、採掘速度上昇の効果を得ます。</span></li>
+<li><b style="color:#bbb;">ロケット</b><span style="color:#fff;">：体力が減っていると後方に吹き飛んで回避します。</span></li>
+<li><b style="color:#bbb;">サンドストーム</b><span style="color:#fff;">：3ブロック以内の敵を短時間暗闇状態にします。</span></li>
+<li><b style="color:#bbb;">精霊の加護</b><span style="color:#fff;">：一定確率でダメージを半分に軽減します。</span></li>
+<li><b style="color:#bbb;">セルフデストラクト</b><span style="color:#fff;">：死ぬとき、その場所で爆発が発生します。</span></li>
+<li><b style="color:#bbb;">ショックウェーブ</b><span style="color:#fff;">：敵から攻撃を受けると、ノックバックすることがあります。</span></li>
+<li><b style="color:#bbb;">スキルスワイプ</b><span style="color:#fff;">：敵と戦っている間に経験値を盗むことがあります。</span></li>
+<li><b style="color:#bbb;">スローモーション</b><span style="color:#fff;">：攻撃時、敵を鈍足にすることがあります。</span></li>
+<li><b style="color:#bbb;">スモークボム</b><span style="color:#fff;">：攻撃時、敵に暗闇と鈍足を与え安全に逃げられるようにします。</span></li>
+<li><b style="color:#bbb;">スネア</b><span style="color:#fff;">：攻撃時、敵に鈍足と採掘疲労効果を付与することがあります。</span></li>
+<li><b style="color:#bbb;">スナイパー</b><span style="color:#fff;">：敵をこの矢で射ると、高い確率で強力な毒ダメージを与えます。</span></li>
+<li><b style="color:#bbb;">スプリングス</b><span style="color:#fff;">：装備するとジャンプ力が少し増加します。</span></li>
+<li><b style="color:#bbb;">スティッキーショット</b><span style="color:#fff;">：矢の着地地点にクモの巣を出現させることがあります。</span></li>
+<li><b style="color:#bbb;">ストームコーラー</b><span style="color:#fff;">：攻撃時、敵に雷を落とすことがあります。</span></li>
+<li><b style="color:#bbb;">システムリブート</b><span style="color:#fff;">：瀕死状態で攻撃を受けると回復して満タンになります。</span></li>
+<li><b style="color:#bbb;">テイマー</b><span style="color:#fff;">：ピンチの際にオオカミが味方として現れます。</span></li>
+<li><b style="color:#bbb;">テレパシー</b><span style="color:#fff;">：採掘したブロックが自動でインベントリに収納されます。</span></li>
+<li><b style="color:#bbb;">ティラー</b><span style="color:#fff;">：土を耕すと、耕した土の周囲3×3範囲も自動で耕します。さらに、4ブロック以内に水源があれば土を自動で潤します。</span></li>
+<li><b style="color:#bbb;">トラップ</b><span style="color:#fff;">：攻撃時、敵に強い鈍足効果を付与することがあります。</span></li>
+<li><b style="color:#bbb;">ヴァンパイア</b><span style="color:#fff;">：戦いながら時々体力が回復します。</span></li>
+<li><b style="color:#bbb;">鉱脈掘り</b><span style="color:#fff;">：隣接する鉱石ブロックをまとめて破壊します。レベルが上がるほど、破壊できる範囲が広がります。</span></li>
+<li><b style="color:#bbb;">ヴェノム</b><span style="color:#fff;">：攻撃時、敵を毒状態にすることがあります。</span></li>
+<li><b style="color:#bbb;">ヴァイパー</b><span style="color:#fff;">：敵に毒を付与することがあります。</span></li>
+<li><b style="color:#bbb;">ブードゥー</b><span style="color:#fff;">：攻撃時、敵を弱体化させることがあります。</span></li>
+<li><b style="color:#bbb;">ウィザー</b><span style="color:#fff;">：攻撃時、敵に高レベルのウィザー効果を付与することがあります。</span></li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Empty_Toolip.pngと説明テキストを重ねて表示するUI（テキスト量で自動リサイズ） -->
+<div id="tooltip-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:auto;padding:0;margin:0;box-sizing:border-box;">
+    <div id="tooltip-img-wrap" style="position:relative;display:inline-block;padding:0;margin:0;box-sizing:border-box;">
+      <img src="../icon/Empty_Toolip.png" alt="tooltip" style="width:100%;max-width:520px;min-width:320px;height:auto;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;pointer-events:none;padding:0;margin:0;box-sizing:border-box;" />
+  <div id="tooltip-text" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;padding:24px 32px;box-sizing:border-box;font-size:1.1em;font-weight:bold;color:#a100ff;text-shadow:1px 1px 2px #fff4;overflow-y:auto;pointer-events:auto;">
+        <div style="text-align:left;width:100%;max-width:440px;">
+<b style="color:#ffe600;">有効なカスタムエンチャント一覧（ESエンチャ台や交易などで入手）</b><br>
+<ul style="padding-left:1.2em;margin:0;">
+<li><b style="color:#bbb;">テレキネシス</b><span style="color:#fff;">：壊れたブロックからのドロップをインベントリに直接転送</span></li>
+<li><b style="color:#bbb;">木こり</b><span style="color:#fff;">：しゃがみながら木を掘ると、木全体を瞬時に破壊します</span></li>
+<li><b style="color:#bbb;">シールディング </b><span style="color:#fff;">：効果 20-40% 稀に攻撃を反射します</span></li>
+<li><b style="color:#ffe600;">ポテンシー</b><span style="color:#fff;">：効果 20-40%ポーション効果向上、デメリット効果時間短縮</span></li>
+<li><b style="color:#bbb;">収穫</b><span style="color:#fff;">：完全に生育した作物を右クリックすると、即座に収穫して再び植え</span></li>
+<li><b style="color:#bbb;">ヴィゴラス </b><span style="color:#fff;">：効果 1 最大HPが増加</span></li>
+<li><b style="color:#bbb;">プレート </b><span style="color:#fff;">：効果 2 耐久値向上</span></li>
+<li><b style="color:#bbb;">移動速度上昇 </b><span style="color:#fff;">：効果 20-30% 装備時、常に移動速度上昇</span></li>
+<li><b style="color:#bbb;">跳躍力 </b><span style="color:#fff;">：効果 I-II 装備時、常にジャンプ力上昇</span></li>
+<li><b style="color:#bbb;">鋭い槍 </b><span style="color:#fff;">：トライデントシャープネス 0.75-3.75 追加ダメージ</span></li>
+<li><b style="color:#bbb;">グラッピングフック </b><span style="color:#fff;">：釣り竿がグラップリングフックになる</span></li>
+<li><b style="color:#00ffb7;">ナイトビジョン</b><span style="color:#fff;">：装備時は常に暗視効果</span></li>
+<li><b style="color:#00eaff;">採掘速度上昇 </b><span style="color:#fff;">：効果 I-II 採掘速度が向上</span></li>
+<li><b style="color:#bbb;">ウィザー付与 </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率でウィザー効果を付与</span></li>
+<li><b style="color:#00ff00;">毒付与 </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率で毒を付与</span></li>
+<li><b style="color:#ffe600;">ライトニング </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率で落雷発生</span></li>
+<li><b style="color:#bbb;">移動速度低下付与 </b><span style="color:#fff;">：効果 4-8% 攻撃時、確率で移動速度低下を付与</span></li>
+<li><b style="color:#bbb;">爆発 </b><span style="color:#fff;">：効果 50-90% 矢が爆発することがある</span></li>
+<li><b style="color:#7c1fff;">完璧主義者の契約 </b><span style="color:#fff;">：与えるダメージが減少しますが、自分が攻撃を受けるまで攻撃ごとのダメージが増加</span></li>
+<li><b style="color:#bbb;">ウィル・オ・ウィスプ </b><span style="color:#fff;">：倒したエンティティが爆発してダメージを与え、周囲を発火</span></li>
+<li><b style="color:#bbb;">ラピッドファイア </b><span style="color:#fff;">：複数の矢を連続して発射するチャンス</span></li>
+<li><b style="color:#bbb;">サッピング </b><span style="color:#fff;">：経験値倍率が向上 1-2倍</span></li>
+<li><b style="color:#bbb;">ライフスティール </b><span style="color:#fff;">：敵にダメージを与えると、そのダメージの5-10%分回復。倒すと追加回復</span></li>
+<li><b style="color:#bbb;">エクセキューショナー </b><span style="color:#fff;">：クリーパー、スケルトンなどのモブが頭を落とす確率が上昇</span></li>
+<li><b style="color:#bbb;">防具貫通 </b><span style="color:#fff;">：モブにダメージを与える際、重装甲を着用している各部位に対してダメージ増加</span></li>
+<li><b style="color:#ff2aff;">効率強化V2 </b><span style="color:#fff;">：縦横3マス破壊</span></li>
+<li><b style="color:#ff5a36;">バーサーカーの契約 </b><span style="color:#fff;">：与えるダメージが増加、受けるダメージも増加</span></li>
+  </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<script>
+// カスタムエンチャントボタンにホバーでEmpty_Toolip.png＋説明リストを表示
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('custom-enchant-btn');
+  var popup = document.getElementById('tooltip-popup-wrap');
+  if (btn && popup) {
+    var show = function() {
+      popup.style.display = 'block';
+      var text = document.getElementById('tooltip-text');
+      var img = popup.querySelector('img');
+      if (text && img) {
+        var lines = text.innerText.split('\n').length;
+        var base = 220;
+        var h = Math.max(base, lines * 28);
+        img.style.height = h + 'px';
+      }
+    };
+    var hide = function(e) {
+      // ボタン・UI両方から外れたときのみ非表示
+      if (
+        !btn.matches(':hover') &&
+        !popup.matches(':hover')
+      ) {
+        popup.style.display = 'none';
+      }
+    };
+    btn.addEventListener('mouseenter', show);
+    btn.addEventListener('mouseleave', hide);
+    popup.addEventListener('mouseenter', show);
+    popup.addEventListener('mouseleave', hide);
+  }
+
+  // カスタムエンチャント2ボタン用
+  var btn2 = document.getElementById('custom-enchant2-btn');
+  var popup2 = document.getElementById('tooltip2-popup-wrap');
+  if (btn2 && popup2) {
+    var show2 = function() {
+      popup2.style.display = 'block';
+        var img2 = popup2.querySelector('img');
+        if (img2) {
+          img2.style.height = '420px'; // 固定サイズ
+        }
+    };
+    var hide2 = function(e) {
+      if (
+        !btn2.matches(':hover') &&
+        !popup2.matches(':hover')
+      ) {
+        popup2.style.display = 'none';
+      }
+    };
+    btn2.addEventListener('mouseenter', show2);
+    btn2.addEventListener('mouseleave', hide2);
+    popup2.addEventListener('mouseenter', show2);
+    popup2.addEventListener('mouseleave', hide2);
+  }
+});
+
+</script>
 
 <h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(233, 231, 231, 0.53), 0 0 2px rgba(255, 54, 54, 0.53); margin-top:40px;">管理者用</h2>
 <div class="features-list admin-list">
- <div class="feature-btn">管理者コマンド追加機能</div>
- <div class="feature-btn">ラグ解消プログラム機能</div>
- <div class="feature-btn">NPC作成機能</div>
- <div class="feature-btn">複数ワールド管理や作成機能</div>
- <div class="feature-btn">ワールドごとのインベントリ仕分け機能</div>
- <div class="feature-btn">ポータル作成機能</div>
- <div class="feature-btn">画像を貼る機能</div>
- <div class="feature-btn">世界の巻き戻し機能</div>
- <div class="feature-btn">インベントリ巻き戻し機能</div>
- <div class="feature-btn">チート、ハック対策機能</div>
- <div class="feature-btn">土地保護機能</div>
+ <div class="feature-btn">管理者コマンド追加</div>
+ <div class="feature-btn">ラグ解消プログラム</div>
+ <div class="feature-btn">NPC作成</div>
+ <div class="feature-btn">複数ワールド管理や作成</div>
+ <div class="feature-btn">ワールドごとのインベントリ仕分け</div>
+ <div class="feature-btn">ポータル作成</div>
+ <div class="feature-btn">画像を貼る</div>
+ <div class="feature-btn">定期アナウンス</div>
+ <div class="feature-btn">世界の巻き戻し</div>
+ <div class="feature-btn">インベントリ巻き戻し</div>
+ <div class="feature-btn">チート、ハック対策</div>
+ <div class="feature-btn">土地保護</div>
 </div>
 
 <style>
@@ -179,13 +391,14 @@ document.addEventListener('DOMContentLoaded', function() {
   padding: 10px 18px;
   min-width: 120px;
 }
+
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 32px;
   margin: 40px auto 0 auto;
   max-width: 900px;
+  align-items: stretch;
 }
 .feature-btn {
   background: linear-gradient(90deg, #27ffa5ff 0%, #0a7400ff 100%);
@@ -195,12 +408,19 @@ document.addEventListener('DOMContentLoaded', function() {
   border-radius: 12px;
   box-shadow: 0 2px 8px #0003;
   padding: 18px 32px;
-  min-width: 180px;
+  min-width: 0;
+  width: 100%;
+  min-height: 56px;
   text-align: center;
   letter-spacing: 0.03em;
   user-select: none;
   transition: transform 0.1s, box-shadow 0.1s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  white-space: nowrap;
 }
 .feature-btn:hover {
   background: linear-gradient(90deg, #6baa3b 0%, #0a8fc1 100%);
