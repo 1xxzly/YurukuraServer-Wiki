@@ -46,17 +46,30 @@ window.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   var bgm = document.getElementById('bgm');
   if (bgm) {
-    bgm.volume = 0.025;
+    bgm.volume = 0.075;
+    // 初期状態：BGM ON（再生）
+    bgm.muted = false;
+    // 自動再生がブロックされている場合は、ユーザー操作で再生
+    if (typeof bgm.play === 'function') {
+      try { bgm.play(); } catch(e) {}
+    }
   }
   var btn = document.getElementById('bgm-toggle');
   if (bgm && btn) {
+    // 初期表示を必ずBGM ONに
+    btn.textContent = 'BGM ON';
     btn.onclick = function() {
       if (bgm.muted) {
+        // ON表示→再生
         bgm.muted = false;
-        btn.textContent = 'BGM OFF';
-      } else {
-        bgm.muted = true;
+        if (typeof bgm.play === 'function') {
+          try { bgm.play(); } catch(e) {}
+        }
         btn.textContent = 'BGM ON';
+      } else {
+        // OFF表示→ミュート
+        bgm.muted = true;
+        btn.textContent = 'BGM OFF';
       }
     };
   }

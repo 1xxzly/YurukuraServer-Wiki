@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('./fonts/PixelMplus10-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('./fonts/PixelMplus10-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('./fonts/PixelMplus12-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PixelMplus';
+  src: url('./fonts/PixelMplus12-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, h1, h2, h3, h4, h5, h6, .md-typeset {
+  font-family: 'PixelMplus', 'Meiryo', 'MS PGothic', sans-serif !important;
+}
 @media (max-width: 600px) {
   .bgm-btn, .bgm-volume, .bgm-volume input[type="range"] {
     width: 38px !important;
