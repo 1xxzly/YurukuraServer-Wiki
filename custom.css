@@ -61,7 +61,7 @@ body.contact-page {
   background-attachment: fixed !important;
 }
 body.news-page {
-  background-image: url('../icon/book.png') !important;
+  background-image: url('/YurukuraServer-Wiki/icon/book.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
