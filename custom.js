@@ -1,3 +1,19 @@
+// devilfruitページ全体表示/非表示切り替え（document全体でクリック監視）
+function devilfruitToggleHandler(e) {
+  var btn = document.getElementById('toggle-all-btn');
+  var content = document.getElementById('devilfruit-content');
+  if (!btn || !content) return;
+  if (e.target === btn) {
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      btn.textContent = '全ての文字を非表示';
+    } else {
+      content.style.display = 'none';
+      btn.textContent = '全ての文字を表示';
+    }
+  }
+}
+document.addEventListener('click', devilfruitToggleHandler, true);
 // devilfruitページでbodyにdevilfruit-pageクラスを自動付与（ローカル・公開どちらでも対応）
 document.addEventListener('DOMContentLoaded', function() {
   if (location.pathname.includes('devilfruit')) {
