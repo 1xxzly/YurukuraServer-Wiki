@@ -1,6 +1,6 @@
-// devilfruitページでbodyにdevilfruit-pageクラスを自動付与（サブディレクトリ対応）
+// devilfruitページでbodyにdevilfruit-pageクラスを自動付与（ローカル・公開どちらでも対応）
 document.addEventListener('DOMContentLoaded', function() {
-  if (location.pathname.includes('/devilfruit')) {
+  if (location.pathname.includes('devilfruit')) {
     document.body.classList.add('devilfruit-page');
   }
 });
