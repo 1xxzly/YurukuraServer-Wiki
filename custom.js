@@ -1,3 +1,9 @@
+// devilfruitページでbodyにdevilfruit-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/devilfruit(\/|\.html)?$/)) {
+    document.body.classList.add('devilfruit-page');
+  }
+});
 // featuresページ「経済の概念」ボタンにホバーでbook.png＋テキスト表示
 document.addEventListener('DOMContentLoaded', function() {
   var btn = document.getElementById('economy-btn');
