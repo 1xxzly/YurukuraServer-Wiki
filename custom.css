@@ -22,7 +22,7 @@ body.devilfruit-page .devilfruit-black {
   color: #111 !important;
 }
 body.devilfruit-page {
-  background-image: url('/YurukuraServer-Wiki/novaskin-wallpaper-onaboat.png') !important;
+  background-image: url('../novaskin-wallpaper-onaboat.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
