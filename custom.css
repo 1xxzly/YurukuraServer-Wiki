@@ -1,6 +1,12 @@
+/* ...existing code... */
+/* devilfruitページの黒文字強制用 */
+.devilfruit-black {
+  color: #000000 !important;
+}
+/* devilfruitページの黒文字強制・最優先 */
 body.devilfruit-page .devilfruit-black {
-  color: #111 !important;
-  -webkit-text-fill-color: #000000 !important;
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
   background: #fff !important;
   padding: 0.2em 0.5em;
   border-radius: 0.3em;
@@ -17,12 +23,8 @@ body.devilfruit-page .devilfruit-black {
     1.5px -1.5px 0 #fff,
    -1.5px -1.5px 0 #fff;
 }
-/* devilfruitページの黒文字強制用 */
-.devilfruit-black {
-  color: #2b2929 !important;
-}
 body.devilfruit-page {
-  background-image: url('../novapirates.png') !important;
+  background-image: url('./novaskin-wallpaper-vacation.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
