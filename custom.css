@@ -86,7 +86,7 @@ body, h1, h2, h3, h4, h5, h6, .md-typeset {
   color: #111 !important;
 }
 body.contact-page {
-  background-image: url('../novaskin-wallpaper-petting.png') !important;
+  background-image: url('../novaskin-wallpaper-vacation.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -102,6 +102,19 @@ body.news-page {
 @media (max-width: 600px) {
   .top-buttons {
     display: none !important;
+  }
+  html, body {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: auto !important;
+    touch-action: pan-x pan-y pinch-zoom !important;
+  }
+  .col-md-9, .md-content {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: auto !important;
   }
 }
 @media (min-width: 601px) {
