@@ -1,3 +1,10 @@
+body.shop-page {
+  background-image: url('minecraft-village-pillage_1920x1080_work_02.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 /* 悪魔の実名用 白文字＋シャドウ */
 .fruit-name {
   color: #fff !important;
