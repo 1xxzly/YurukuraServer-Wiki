@@ -1,3 +1,40 @@
+// ホーム画面の背景画像（#bgImage）を5つの画像からランダムで表示
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.body.classList.contains('index-page')) {
+    var images = [
+      'wallpaper_minecraft_update_aquatic_2560x1440.png',
+      'wallpaper_minecraft_burberry_2560x1440.png',
+      'wallpaper_minecraft_ocean_monument_2560x1440.png',
+      'wallpaper_minecraft_15th-anniversary_1920x1080.png',
+      'wallpaper_minecraft_buzzybees_2560x1440.png'
+    ];
+    var img = images[Math.floor(Math.random() * images.length)];
+    var bg = document.getElementById('bgImage');
+    if(bg) {
+      bg.src = img;
+      console.log('背景画像(src):', img);
+    }
+  }
+});
+// ホーム画面の背景画像を5つの画像からランダムで表示（絶対パス＆デバッグ用console出力付き）
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.body.classList.contains('index-page')) {
+    var images = [
+      '/wallpaper_minecraft_update_aquatic_2560x1440.png',
+      '/wallpaper_minecraft_burberry_2560x1440.png',
+      '/wallpaper_minecraft_ocean_monument_2560x1440.png',
+      '/wallpaper_minecraft_15th-anniversary_1920x1080.png',
+      '/wallpaper_minecraft_buzzybees_2560x1440.png'
+    ];
+    var img = images[Math.floor(Math.random() * images.length)];
+    console.log('背景画像:', img);
+    document.body.style.backgroundImage = 'url(' + img + ')';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center center';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
+  }
+});
 // devilfruitページ全体表示/非表示切り替え（document全体でクリック監視）
 function devilfruitToggleHandler(e) {
   var btn = document.getElementById('toggle-all-btn');
