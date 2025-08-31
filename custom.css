@@ -1,5 +1,33 @@
+body.mobai-page {
+  background-image: url('there_are_monsters_nearby_by_lockrikard_d7orl35.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.oneblock-page {
+  background-image: url('one_block_skyblock_by_ja2h_der7jru.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.cosmetic-page {
+  background-image: url('novaskin-wallpaper-goldenapple.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.shop2-page {
+  background-image: url('novaskin-wallpaper-candyshop.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 body.shop-page {
-  background-image: url('minecraft-village-pillage_1920x1080_work_02.png') !important;
+  background-image: url('grocery_shopping_by_lockrikard_d6v9dyj.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
