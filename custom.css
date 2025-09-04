@@ -1,3 +1,24 @@
+body.chestlock-page {
+  background-image: url('chestlock.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.dropper-page {
+  background-image: url('the_dropper_by_stuffandrandomness_dgbius3.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.protection-page {
+  background-image: url('novaskin-wallpaper-construction.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 body.pets-page {
   background-image: url('sunrest_by_jhokey_djmssf3.png') !important;
   background-size: cover !important;
@@ -34,7 +55,7 @@ body.shop2-page {
   background-attachment: fixed !important;
 }
 body.shop-page {
-  background-image: url('grocery_shopping_by_lockrikard_d6v9dyj.png') !important;
+  background-image: url('yurukurashop.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
