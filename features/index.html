@@ -268,45 +268,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><b style="color:#bbb;">ヴァイパー</b><span style="color:#fff;">：敵に毒を付与することがあります。</span></li>
 <li><b style="color:#bbb;">ブードゥー</b><span style="color:#fff;">：攻撃時、敵を弱体化させることがあります。</span></li>
 <li><b style="color:#bbb;">ウィザー</b><span style="color:#fff;">：攻撃時、敵に高レベルのウィザー効果を付与することがあります。</span></li>
-</ul>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Empty_Toolip.pngと説明テキストを重ねて表示するUI（テキスト量で自動リサイズ） -->
-<div id="tooltip-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:auto;padding:0;margin:0;box-sizing:border-box;">
-    <div id="tooltip-img-wrap" style="position:relative;display:inline-block;padding:0;margin:0;box-sizing:border-box;">
-      <img src="../icon/Empty_Toolip.png" alt="tooltip" style="width:100%;max-width:520px;min-width:320px;height:auto;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;pointer-events:none;padding:0;margin:0;box-sizing:border-box;" />
-  <div id="tooltip-text" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;padding:24px 32px;box-sizing:border-box;font-size:1.1em;font-weight:bold;color:#a100ff;text-shadow:1px 1px 2px #fff4;overflow-y:auto;pointer-events:auto;">
-        <div style="text-align:left;width:100%;max-width:440px;">
-<b style="color:#ffe600;">有効なカスタムエンチャント一覧（ESエンチャ台や交易などで入手）</b><br>
-<ul style="padding-left:1.2em;margin:0;">
-<li><b style="color:#bbb;">木こり</b><span style="color:#fff;">：しゃがみながら木を掘ると、木全体を瞬時に破壊します</span></li>
-<li><b style="color:#bbb;">シールディング </b><span style="color:#fff;">：効果 20-40% 稀に攻撃を反射します</span></li>
-<li><b style="color:#ffe600;">ポテンシー</b><span style="color:#fff;">：効果 20-40%ポーション効果向上、デメリット効果時間短縮</span></li>
-<li><b style="color:#bbb;">収穫</b><span style="color:#fff;">：完全に生育した作物を右クリックすると、即座に収穫して再び植え</span></li>
-<li><b style="color:#bbb;">ヴィゴラス </b><span style="color:#fff;">：効果 1 最大HPが増加</span></li>
-<li><b style="color:#bbb;">プレート </b><span style="color:#fff;">：効果 2 耐久値向上</span></li>
-<li><b style="color:#bbb;">移動速度上昇 </b><span style="color:#fff;">：効果 20-30% 装備時、常に移動速度上昇</span></li>
-<li><b style="color:#bbb;">跳躍力 </b><span style="color:#fff;">：効果 I-II 装備時、常にジャンプ力上昇</span></li>
-<li><b style="color:#bbb;">鋭い槍 </b><span style="color:#fff;">：トライデントシャープネス 0.75-3.75 追加ダメージ</span></li>
-<li><b style="color:#bbb;">グラッピングフック </b><span style="color:#fff;">：釣り竿がグラップリングフックになる</span></li>
-<li><b style="color:#00eaff;">採掘速度上昇 </b><span style="color:#fff;">：効果 I-II 採掘速度が向上</span></li>
-<li><b style="color:#bbb;">ウィザー付与 </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率でウィザー効果を付与</span></li>
-<li><b style="color:#00ff00;">毒付与 </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率で毒を付与</span></li>
-<li><b style="color:#ffe600;">ライトニング </b><span style="color:#fff;">：効果 5-15% 攻撃時、確率で落雷発生</span></li>
-<li><b style="color:#bbb;">移動速度低下付与 </b><span style="color:#fff;">：効果 4-8% 攻撃時、確率で移動速度低下を付与</span></li>
-<li><b style="color:#bbb;">爆発 </b><span style="color:#fff;">：効果 50-90% 矢が爆発することがある</span></li>
-<li><b style="color:#7c1fff;">完璧主義者の契約 </b><span style="color:#fff;">：与えるダメージが減少しますが、自分が攻撃を受けるまで攻撃ごとのダメージが増加</span></li>
-<li><b style="color:#bbb;">ウィル・オ・ウィスプ </b><span style="color:#fff;">：倒したエンティティが爆発してダメージを与え、周囲を発火</span></li>
-<li><b style="color:#bbb;">ラピッドファイア </b><span style="color:#fff;">：複数の矢を連続して発射するチャンス</span></li>
-<li><b style="color:#bbb;">サッピング </b><span style="color:#fff;">：経験値倍率が向上 1-2倍</span></li>
-<li><b style="color:#bbb;">ライフスティール </b><span style="color:#fff;">：敵にダメージを与えると、そのダメージの5-10%分回復。倒すと追加回復</span></li>
-<li><b style="color:#bbb;">エクセキューショナー </b><span style="color:#fff;">：クリーパー、スケルトンなどのモブが頭を落とす確率が上昇</span></li>
-<li><b style="color:#bbb;">防具貫通 </b><span style="color:#fff;">：モブにダメージを与える際、重装甲を着用している各部位に対してダメージ増加</span></li>
-<li><b style="color:#ff2aff;">効率強化V2 </b><span style="color:#fff;">：縦横3マス破壊</span></li>
-<li><b style="color:#ff5a36;">バーサーカーの契約 </b><span style="color:#fff;">：与えるダメージが増加、受けるダメージも増加</span></li>
-  </ul>
+
       </div>
     </div>
   </div>
@@ -315,6 +277,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 // カスタムエンチャントボタンにホバーでEmpty_Toolip.png＋説明リストを表示
 document.addEventListener('DOMContentLoaded', function() {
+  // カスタムエンチャントボタンをクリックでcustomenchant.mdに遷移
+  var customEnchantBtn = document.getElementById('custom-enchant-btn');
+  if (customEnchantBtn) {
+    customEnchantBtn.addEventListener('click', function() {
+      window.location.href = '../customenchant/';
+    });
+  }
   var btn = document.getElementById('custom-enchant-btn');
   var popup = document.getElementById('tooltip-popup-wrap');
   if (btn && popup) {
