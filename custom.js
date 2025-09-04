@@ -2,11 +2,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   if (document.body.classList.contains('index-page')) {
     var images = [
-      'wallpaper_minecraft_update_aquatic_2560x1440.png',
       'wallpaper_minecraft_burberry_2560x1440.png',
-      'wallpaper_minecraft_ocean_monument_2560x1440.png',
       'wallpaper_minecraft_15th-anniversary_1920x1080.png',
-      'wallpaper_minecraft_buzzybees_2560x1440.png'
+      'wallpaper_minecraft_buzzybees_2560x1440.png',
+      'minecraft_ocean_world.png'
     ];
     var img = images[Math.floor(Math.random() * images.length)];
     var bg = document.getElementById('bgImage');
@@ -20,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   if (document.body.classList.contains('index-page')) {
     var images = [
-      '/wallpaper_minecraft_update_aquatic_2560x1440.png',
       '/wallpaper_minecraft_burberry_2560x1440.png',
-      '/wallpaper_minecraft_ocean_monument_2560x1440.png',
       '/wallpaper_minecraft_15th-anniversary_1920x1080.png',
       '/wallpaper_minecraft_buzzybees_2560x1440.png'
     ];

@@ -1,3 +1,10 @@
+body.jobs-page {
+  background-image: url('beelocation.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 body.chestlock-page {
   background-image: url('chestlock.png') !important;
   background-size: cover !important;
