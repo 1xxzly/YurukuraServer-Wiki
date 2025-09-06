@@ -163,20 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="../minigametenisu/" style="text-decoration:none;"><div class="feature-btn">ミニゲーム:テニス</div></a>
   <div class="feature-btn">ディスコード連携</div>
 </div>
-<!-- Empty_Toolip.pngと説明テキストを重ねて表示するUI（カスタムエンチャント2用） -->
-<div id="tooltip2-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:auto;padding:0;margin:0;box-sizing:border-box;">
-    <div id="tooltip2-img-wrap" style="position:relative;display:inline-block;padding:0;margin:0;box-sizing:border-box;">
-  <img src="../icon/Empty_Toolip.png" alt="tooltip" style="width:100%;max-width:520px;min-width:320px;height:420px;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;pointer-events:none;padding:0;margin:0;box-sizing:border-box;" />
-  <div id="tooltip2-text" style="position:absolute;top:0;left:0;width:100%;max-height:420px;display:block;padding:24px 32px;box-sizing:border-box;font-size:1.1em;font-weight:bold;color:#a100ff;text-shadow:1px 1px 2px #fff4;overflow-y:auto;pointer-events:auto;">
-  <div style="text-align:left;width:100%;max-width:740px;">
-</ul>
-
-
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
 <script>
 // カスタムエンチャントボタンにホバーでEmpty_Toolip.png＋説明リストを表示
 document.addEventListener('DOMContentLoaded', function() {
@@ -185,6 +171,13 @@ document.addEventListener('DOMContentLoaded', function() {
   if (customEnchantBtn) {
     customEnchantBtn.addEventListener('click', function() {
       window.location.href = '../customenchant/';
+    });
+  }
+  // カスタムエンチャント2ボタンをクリックでcustomenchant2.mdに遷移
+  var customEnchant2Btn = document.getElementById('custom-enchant2-btn');
+  if (customEnchant2Btn) {
+    customEnchant2Btn.addEventListener('click', function() {
+      window.location.href = '../customenchant2/';
     });
   }
   var btn = document.getElementById('custom-enchant-btn');
@@ -216,30 +209,6 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.addEventListener('mouseleave', hide);
   }
 
-  // カスタムエンチャント2ボタン用
-  var btn2 = document.getElementById('custom-enchant2-btn');
-  var popup2 = document.getElementById('tooltip2-popup-wrap');
-  if (btn2 && popup2) {
-    var show2 = function() {
-      popup2.style.display = 'block';
-        var img2 = popup2.querySelector('img');
-        if (img2) {
-          img2.style.height = '420px'; // 固定サイズ
-        }
-    };
-    var hide2 = function(e) {
-      if (
-        !btn2.matches(':hover') &&
-        !popup2.matches(':hover')
-      ) {
-        popup2.style.display = 'none';
-      }
-    };
-    btn2.addEventListener('mouseenter', show2);
-    btn2.addEventListener('mouseleave', hide2);
-    popup2.addEventListener('mouseenter', show2);
-    popup2.addEventListener('mouseleave', hide2);
-  }
 });
 
 </script>

@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <style>
 body.customenchant-page {
-  background-image: url('../mixed_blessing.png') !important;
+  background-image: url('../overclock.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -122,39 +122,101 @@ body.customenchant-page {
 </style>
 
 <h1 id="_1"><span style="font-size:0.8em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;"> <span style="color:black;"># カスタムエンチャント一覧</h1>
-<p><span style="font-size:1em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.1em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;">このページでは有効なカスタムエンチャントの効果一覧を紹介します。</p>
+<p><span style="font-size:1em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.1em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;">※カスタムエンチャント2は現在エラー多発で非対応が多くあるため削除する可能性があります。<br>
+ ご利用は自己責任でお願い致します。</p>
 <p><button id="toggle-all-btn" style="margin:8px 0; padding:6px 8px; font-size:1em; border-radius:6px; border:1px solid #888; background:#fafafa; cursor:pointer;">全ての文字を非表示</button></p>
 <div id="devilfruit-content">
  <span style="color:white;">
 
-<span style="font-size:1.3em; color:#fff; background:rgba(34,34,34,0.32); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 1px 12px rgba(0,0,0,0.13); display:inline-block;">有効なカスタムエンチャント一覧（ESエンチャ台や交易などで入手）</span><br>
+<span style="font-size:1.3em; color:#fff; background:rgba(34, 34, 34, 1); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 1px 12px rgba(250, 250, 250, 1); display:inline-block;">有効なカスタムエンチャント2一覧（NPCからお金で入手）</span><br>
 </span>
 <span style="color:#fff;">
-<span style="color:#ff5a36;">木こり：</span>しゃがみながら木を掘ると、木全体を瞬時に破壊します<br>
-<span style="color:#ff5a36;">シールディング：</span>効果 20-40% 稀に攻撃を反射します<br>
-<span style="color:#ffe600;">ポテンシー：</span>効果 20-40%ポーション効果向上、デメリット効果時間短縮<br>
-<span style="color:#00eaff;">収穫：</span>完全に生育した作物を右クリックすると、即座に収穫して再び植え<br>
-<span style="color:#00ff00;">ヴィゴラス：</span>効果 1 最大HPが増加<br>
-<span style="color:#ffe600;">プレート：</span>効果 2 耐久値向上<br>
-<span style="color:#ffe600;">移動速度上昇：</span>効果 20-30% 装備時、常に移動速度上昇<br>
-<span style="color:#ffe600;">跳躍力：</span>効果 I-II 装備時、常にジャンプ力上昇<br>
-<span style="color:#ff5a36;">鋭い槍：</span>トライデントシャープネス 0.75-3.75 追加ダメージ<br>
-<span style="color:#00eaff;">グラッピングフック：</span>釣り竿がグラップリングフックになる<br>
-<span style="color:#00eaff;">採掘速度上昇：</span>効果 I-II 採掘速度が向上<br>
-<span style="color:#7c1fff;">ウィザー付与：</span>効果 5-15% 攻撃時、確率でウィザー効果を付与<br>
-<span style="color:#00ff00;">毒付与：</span>効果 5-15% 攻撃時、確率で毒を付与<br>
-<span style="color:#ffe600;">ライトニング：</span>効果 5-15% 攻撃時、確率で落雷発生<br>
-<span style="color:#00eaff;">移動速度低下付与：</span>効果 4-8% 攻撃時、確率で移動速度低下を付与<br>
-<span style="color:#ff5a36;">爆発：</span>効果 50-90% 矢が爆発することがある<br>
-<span style="color:#bbb;">完璧主義者の契約：</span>与えるダメージが減少しますが、自分が攻撃を受けるまで攻撃ごとのダメージが増加<br>
-<span style="color:#ff5a36;">ウィル・オ・ウィスプ：</span>倒したエンティティが爆発してダメージを与え、周囲を発火<br>
-<span style="color:#00eaff;">ラピッドファイア：</span>複数の矢を連続して発射するチャンス<br>
-<span style="color:#00eaff;">サッピング：</span>経験値倍率が向上 1-2倍<br>
-<span style="color:#00ff00;">ライフスティール：</span>敵にダメージを与えると、そのダメージの5-10%分回復。倒すと追加回復<br>
-<span style="color:#bbb;">エクセキューショナー：</span>クリーパー、スケルトンなどのモブが頭を落とす確率が上昇<br>
-<span style="color:#ff5a36;">防具貫通：</span>モブにダメージを与える際、重装甲を着用している各部位に対してダメージ増加<br>
-<span style="color:#ffe600;">効率強化V2：</span>縦横3マス破壊<br>
-<span style="color:#ff5a36;">バーサーカーの契約：</span>与えるダメージが増加、受けるダメージも増加<br>
+<ul>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">アシッドレイン</span><span style="color:#ffff;"> 周囲3ブロック以内の敵に短時間の毒効果を与えます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">アドレナリン</span> <span style="color:#ffff;">体力が低下しているとき、スピードブーストを得られる可能性があります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">エンジェル</span> <span style="color:#ffff;">近くの派閥メンバーを回復する。このアイテムを装備していると効果発動。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">反重力</span> <span style="color:#ffff;">装備すると高くジャンプできる効果を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">自動精錬</span> <span style="color:#ffff;">鉱石を自動で精錬する確率がある。より多くのインゴットを得られる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">バトルクライ</span> <span style="color:#ffff;">戦闘中に10%(+レベルごとに5%)の確率で周囲のプレイヤーを後方へ吹き飛ばす。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">ビ―キーパー</span> <span style="color:#ffff;">ピンチの時にミツバチを召喚する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">バーサーク</span> <span style="color:#ffff;">一定確率で自分に攻撃力アップと採掘疲労を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ブラスト</span> <span style="color:#ffff;">レベルに応じて3×レベル×3の範囲のブロックを同時に破壊する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ブレスド</span> <span style="color:#ffff;">一定確率ですべてのデバフ効果を解除する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">ブラインドネス</span> <span style="color:#ffff;">敵に暗闇効果を付与する確率がある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">ブリザード</span> <span style="color:#ffff;">敵に3ブロック以内のスロウ効果を短時間付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">爆発</span> <span style="color:#ffff;">矢が当たった場所にTNTが爆発することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">バーンシールド</span> <span style="color:#ffff;">装備時に火炎耐性を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">カクタス</span> <span style="color:#ffff;">攻撃してきた相手にダメージを与えることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">チャージ</span> <span style="color:#ffff;">敵プレイヤーを倒すと自分と周囲の味方にスピードアップを付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">コマンダー</span> <span style="color:#ffff;">装備者と近くの派閥メンバーにヘイスト効果を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">コンフュージョン</span> <span style="color:#ffff;">敵に混乱効果を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">クラウチ</span> <span style="color:#ffff;">戦闘中、しゃがむとレベルに応じて10%(+5%)ダメージ軽減。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">カースド</span> <span style="color:#ffff;">敵に採掘疲労を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">サイボーグ</span> <span style="color:#ffff;">スピード、攻撃力、ジャンプ力を付与し敵を倒すのに役立つ。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">デーモンフォージド</span> <span style="color:#ffff;">戦闘中、10%(+レベルごとに5%)の確率で耐久値ダメージを増加させる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ディサーマー</span> <span style="color:#ffff;">敵の防具をランダムで1箇所外すことがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">ディスオーダー</span> <span style="color:#ffff;">敵のホットバーのアイテムの順番を入れ替えることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">ディジー</span> <span style="color:#ffff;">敵に混乱効果を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ドクター</span> <span style="color:#ffff;">攻撃した味方を回復することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ダブルダメージ</span> <span style="color:#ffff;">ダメージを2倍にすることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ドランク</span> <span style="color:#ffff;">装備すると、力強さ、採掘疲労、鈍足を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">エンライテンド</span> <span style="color:#ffff;">攻撃を受けている間に回復することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">エクスキュート</span> <span style="color:#ffff;">敵の体力が少ないときに力強さを得ることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">エクスペリエンス</span> <span style="color:#ffff;">鉱石から得られる経験値が2倍以上になることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">ファミッシュド</span> <span style="color:#ffff;">戦闘中、敵に10%(レベルごとに+5%)の確率で空腹状態を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ファストターン</span> <span style="color:#ffff;">ダメージを増加させることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">フィードミー</span> <span style="color:#ffff;">戦闘中に回復することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">フォーティファイ</span> <span style="color:#ffff;">敵に弱体効果を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">フリーズ</span> <span style="color:#ffff;">敵に鈍足効果を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ファーネス</span> <span style="color:#ffff;">鉱石を必ずブロックではなくアイテムに変える。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">ギアーズ</span> <span style="color:#ffff;">装備するとスピードアップ効果を与える。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">グリーンサム</span> <span style="color:#ffff;">苗木を右クリックすると、レベルごとに+10%増加する10%の確率で植木を完全に成長させるが、クワの耐久度が減少する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ハーベスター</span> <span style="color:#ffff;">成熟した作物を壊すと、3x3範囲内のすべての成熟した作物を同時に壊す。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ヘイスト</span> <span style="color:#ffff;">手に持っていると採掘速度上昇効果を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ハルク</span> <span style="color:#ffff;">装備している間、攻撃力上昇、耐性、鈍足効果を与える。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">アイスフリーズ</span> <span style="color:#ffff;">敵に鈍足効果を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">インプラント</span> <span style="color:#ffff;">装備中に移動すると、空腹度が増加し始める。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">インフェステーション</span> <span style="color:#ffff;">ピンチのときにエンダーマイトとシルバーフィッシュを召喚する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">インクイジティブ</span> <span style="color:#ffff;">エンチャントレベルに応じて経験値を2倍以上獲得することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">インソムニア</span> <span style="color:#ffff;">混乱、採掘疲労、鈍足を付与するが、高確率でダメージが2倍になる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">インティミデイト</span> <span style="color:#ffff;">3ブロック以内の敵に短時間弱体化を付与する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">リーダーシップ</span> <span style="color:#ffff;">味方が周囲にいると攻撃力が上がる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ライフスティール</span> <span style="color:#ffff;">敵から体力を吸収することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ライトウェイト</span> <span style="color:#ffff;">戦闘中に採掘速度上昇を付与することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ライトニングアロー</span> <span style="color:#ffff;">矢が落ちた場所に稲妻を落とすことがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">マニューバー</span> <span style="color:#ffff;">攻撃を回避することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">マーメイド</span> <span style="color:#ffff;">装備していると水中呼吸が得られる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">モルテン</span> <span style="color:#ffff;">敵を炎上させることがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">マルチアロー</span> <span style="color:#ffff;">複数の矢を同時に放つことがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">ネクロマンサー</span> <span style="color:#ffff;">ピンチのときにゾンビを召喚する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">忍者</span> <span style="color:#ffff;">装備すると速度と体力が上昇する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ナーサリー</span> <span style="color:#ffff;">歩いている間に体力が回復することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">ニュートリション</span> <span style="color:#ffff;">戦闘中に空腹度を回復することがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">オブリタレイト</span> <span style="color:#ffff;">敵を後方に吹き飛ばすことがある。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">オーバーロード</span> <span style="color:#ffff;">装備すると体力が上昇する。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">オキシジェネイト</span> <span style="color:#ffff;">手に持っている間水中呼吸が得られる。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ペインギバー</span> <span style="color:#ffff;">敵に毒を与える確率があります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">パラライズ</span> <span style="color:#ffff;">一定確率で敵に高い採掘疲労と鈍足を与えます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ピアッシング</span> <span style="color:#ffff;">一定確率で敵に2倍の大ダメージを与えます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">プランター</span> <span style="color:#ffff;">土を耕すとオフハンドまたはホットバーの右から左の順にある種を自動で植えます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">引き寄せ</span> <span style="color:#ffff;">攻撃時、敵が自分に向かって吹き飛ぶことがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">ラディアント</span> <span style="color:#ffff;">3ブロック以内の敵に短時間火をつけます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">激怒</span> <span style="color:#ffff;">戦闘を続けるほど攻撃力が上昇します。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">粉砕</span> <span style="color:#ffff;">一定確率でダメージが2倍になります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">ロケット</span> <span style="color:#ffff;">体力が減っていると後方に吹き飛んで回避します。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">サンドストーム</span> <span style="color:#ffff;">3ブロック以内の敵を短時間暗闇状態にします。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00ff00;">精霊の加護</span> <span style="color:#ffff;">一定確率でダメージを半分に軽減します。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">セルフデストラクト</span> <span style="color:#ffff;">死ぬとき、その場所で爆発が発生します。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#00eaff;">ショックウェーブ</span> <span style="color:#ffff;">敵から攻撃を受けると、ノックバックすることがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">スキルスワイプ</span> <span style="color:#ffff;">敵と戦っている間に経験値を盗むことがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">スローモーション</span> <span style="color:#ffff;">攻撃時、敵を鈍足にすることがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">スモークボム</span> <span style="color:#ffff;">攻撃時、敵に暗闇と鈍足を与え安全に逃げられるようにします。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">スネア</span> <span style="color:#ffff;">攻撃時、敵に鈍足と採掘疲労効果を付与することがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ff5a36;">スナイパー</span> <span style="color:#ffff;">敵をこの矢で射ると、高い確率で強力な毒ダメージを与えます。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">スプリングス</span> <span style="color:#ffff;">装備するとジャンプ力が少し増加します。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#7c1fff;">スティッキーショット</span> <span style="color:#ffff;">矢の着地地点にクモの巣を出現させることがあります。</span></span></li>
+  <li><span style="background:rgba(0,0,0,0.7); border-radius:0.4em; padding:0.1em 0.5em; display:inline-block;"><span style="color:#ffe600;">ストームコーラー</span> <span style="color:#ffff;">攻撃時、敵に雷を落とすことがあります。</span></span></li><br><br>
+</ul>
 </span>
 </span>
   </ul>
