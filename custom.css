@@ -74,6 +74,13 @@ body.shop-page {
   text-shadow: 2px 2px 6px #222, 0 0 8px #fff8, 0 0 2px #0008 !important;
 }
 /* ...existing code... */
+body.Leveledmobs-page {
+  background-image: url('novaskin-wallpaper-zombie.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 /* devilfruitページの黒文字強制用 */
 .devilfruit-black {
   color: #000000 !important;

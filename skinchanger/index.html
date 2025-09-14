@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>導入機能一覧 - ゆるっとクラフトサーバー公式Wiki</title>
+        <title>Skinchanger - ゆるっとクラフトサーバー公式Wiki</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                                 <a href="../commands/" class="nav-link">使用可能コマンド</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">導入機能一覧</a>
+                                <a href="../features/" class="nav-link">導入機能一覧</a>
                             </li>
                             <li class="nav-item">
                                 <a href="../rules/" class="nav-link">ルール・規約</a>
@@ -79,16 +79,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../commands/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../rules/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -111,167 +101,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.body.classList.add('features-page');
-});
-</script>
-
-<style>
-body.features-page {
-  background-image: url('../features_image.png') !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.body.classList.add('features-page');
-});
-</script>
-
-<h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(235, 235, 235, 0.53), 0 0 2px #0008; margin-top:40px;">主な機能</h2>
-<div class="features-list">
-  <div class="feature-btn" id="economy-btn">経済の概念</div>
-
-<!-- book.pngとテキストを重ねて中央表示するUI -->
-<div id="book-popup-wrap" style="display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:9999;pointer-events:none;">
-  <!-- 余分なimgタグを削除 -->
-    <img src="../icon/book.png" alt="book" style="height:640px;display:block;background:transparent!important;box-shadow:none!important;border:none!important;outline:none!important;filter:drop-shadow(0 0 0 transparent)!important;" />
-  <div id="book-popup-text" style="position:absolute;top:20%;left:50%;transform:translate(-50%,-50%);font-size:1.0em;font-weight:bold;color:#222;text-shadow:2px 2px 6px #fff,0 0 8px #fff8;white-space:nowrap;">経済システムとはゲーム内に通貨が追加され、<br>専用ショップなど様々なものを買うことができます。<br>稼ぐには職業に就く必要があります。</div>
 </div>
-  <a href="../jobs/" style="text-decoration:none;"><div class="feature-btn">職業</div></a>
-  <a href="../pets/" style="text-decoration:none;"><div class="feature-btn">育成可能ペット</div></a>
-  <a href="../devilfruit/" style="text-decoration:none;"><div class="feature-btn">悪魔の実</div></a>
-  <div class="feature-btn" id="custom-enchant-btn">カスタムエンチャント</div>
-  <a href="../cosmetic/" style="text-decoration:none;"><div class="feature-btn">コスメティック</div></a>
-  <a href="../casino/" style="text-decoration:none;"><div class="feature-btn">カジノ</div></a>
-  <a href="../chestlock/" style="text-decoration:none;"><div class="feature-btn">チェストロック</div></a>
-  <a href="../protection/" style="text-decoration:none;"><div class="feature-btn">土地保護</div></a>
-  <a href="../sketch/" style="text-decoration:none;"><div class="feature-btn">お絵かき</div></a>
-  <div class="feature-btn">ログインボーナス</div>
-  <a href="../skinchanger/" style="text-decoration:none;"><div class="feature-btn">スキンチェンジャー</div></a>
-  <a href="../leveledmobs/" style="text-decoration:none;"><div class="feature-btn">レベルドモブズ</div></a>
-  <a href="../seasons/" style="text-decoration:none;"><div class="feature-btn">季節の概念</div></a>
-  <a href="../shop/" style="text-decoration:none;"><div class="feature-btn">期間限定ショップ</div></a>
-  <a href="../shop2/" style="text-decoration:none;"><div class="feature-btn">個人ショップ</div></a>
-  <a href="../dropper/" style="text-decoration:none;"><div class="feature-btn">ミニゲーム:ドロッパー</div></a>
-  <a href="../minigamehokke/" style="text-decoration:none;"><div class="feature-btn">ミニゲーム:ホッケー</div></a>
-  <a href="../minigametenisu/" style="text-decoration:none;"><div class="feature-btn">ミニゲーム:テニス</div></a>
-  <div class="feature-btn">ディスコード連携</div>
-</div>
-<script>
-// カスタムエンチャントボタンにホバーでEmpty_Toolip.png＋説明リストを表示
-document.addEventListener('DOMContentLoaded', function() {
-  // カスタムエンチャントボタンをクリックでcustomenchant.mdに遷移
-  var customEnchantBtn = document.getElementById('custom-enchant-btn');
-  if (customEnchantBtn) {
-    customEnchantBtn.addEventListener('click', function() {
-      window.location.href = '../customenchant/';
-    });
-  }
-  // カスタムエンチャント2ボタンをクリックでcustomenchant2.mdに遷移
-  var customEnchant2Btn = document.getElementById('custom-enchant2-btn');
-  if (customEnchant2Btn) {
-    customEnchant2Btn.addEventListener('click', function() {
-      window.location.href = '../customenchant2/';
-    });
-  }
-  var btn = document.getElementById('custom-enchant-btn');
-  var popup = document.getElementById('tooltip-popup-wrap');
-  if (btn && popup) {
-    var show = function() {
-      popup.style.display = 'block';
-      var text = document.getElementById('tooltip-text');
-      var img = popup.querySelector('img');
-      if (text && img) {
-        var lines = text.innerText.split('\n').length;
-        var base = 220;
-        var h = Math.max(base, lines * 28);
-        img.style.height = h + 'px';
-      }
-    };
-    var hide = function(e) {
-      // ボタン・UI両方から外れたときのみ非表示
-      if (
-        !btn.matches(':hover') &&
-        !popup.matches(':hover')
-      ) {
-        popup.style.display = 'none';
-      }
-    };
-    btn.addEventListener('mouseenter', show);
-    btn.addEventListener('mouseleave', hide);
-    popup.addEventListener('mouseenter', show);
-    popup.addEventListener('mouseleave', hide);
-  }
-
-});
-
-</script>
-
-<h2 style="text-align:center; color:#fff; text-shadow:2px 2px 6px #222, 0 0 8px rgba(233, 231, 231, 0.53), 0 0 2px rgba(255, 54, 54, 0.53); margin-top:40px;">管理者用</h2>
-<div class="features-list admin-list">
- <div class="feature-btn">管理者コマンド追加</div>
- <div class="feature-btn">ラグ解消プログラム</div>
- <div class="feature-btn">NPC作成</div>
- <div class="feature-btn">複数ワールド管理や作成</div>
- <div class="feature-btn">インベントリ仕分け</div>
- <div class="feature-btn">ポータル作成</div>
- <div class="feature-btn">画像を貼る</div>
- <div class="feature-btn">定期アナウンス</div>
- <div class="feature-btn">世界の巻き戻し</div>
- <div class="feature-btn">インベントリ巻き戻し</div>
- <div class="feature-btn">チート、ハック対策</div>
- <div class="feature-btn">土地保護</div>
-</div>
-
-<style>
-.admin-list .feature-btn {
-  font-size: 0.95em;
-  padding: 10px 18px;
-  min-width: 120px;
-}
-
-.features-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px 32px;
-  margin: 40px auto 0 auto;
-  max-width: 900px;
-  align-items: stretch;
-}
-.feature-btn {
-  background: linear-gradient(90deg, #27ffa5ff 0%, #0a7400ff 100%);
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: bold;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px #0003;
-  padding: 18px 32px;
-  min-width: 0;
-  width: 100%;
-  min-height: 56px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  user-select: none;
-  transition: transform 0.1s, box-shadow 0.1s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  white-space: nowrap;
-}
-.feature-btn:hover {
-  background: linear-gradient(90deg, #6baa3b 0%, #0a8fc1 100%);
-  transform: translateY(2px) scale(1.04);
-  box-shadow: 0 1px 4px #0005;
-}
-</style></div>
             </div>
         </div>
 
