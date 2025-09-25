@@ -85,6 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('kakuchochest-page');
   }
 });
+// ultrahardcoreページでbodyにultrahardcore-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/ultrahardcore(\/|\.html)?$/)) {
+    document.body.classList.add('ultrahardcore-page');
+  }
+});
+// worldページでbodyにworld-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/world(\/|\.html)?$/)) {
+    document.body.classList.add('world-page');
+  }
+});
 // 背景GIFの表示・非表示を切り替えるスクリプト
 window.addEventListener('DOMContentLoaded', function() {
   const gif = document.getElementById('bgGif');

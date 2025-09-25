@@ -40,13 +40,6 @@ body.mobai-page {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
-body.oneblock-page {
-  background-image: url('one_block_skyblock_by_ja2h_der7jru.png') !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
 body.cosmetic-page {
   background-image: url('novaskin-wallpaper-goldenapple.png') !important;
   background-size: cover !important;
@@ -183,6 +176,20 @@ body.news-page {
 }
 body.kakuchochest-page {
   background-image: url('advancedchest.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.ultrahardcore-page {
+  background-image: url('hardcore.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+body.world-page {
+  background-image: url('world.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
