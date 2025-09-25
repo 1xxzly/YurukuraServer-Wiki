@@ -79,6 +79,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('news-page');
   }
 });
+// kakuchochestページでbodyにkakuchochest-pageクラスを自動付与
+document.addEventListener('DOMContentLoaded', function() {
+  if (location.pathname.match(/\/kakuchochest(\/|\.html)?$/)) {
+    document.body.classList.add('kakuchochest-page');
+  }
+});
 // 背景GIFの表示・非表示を切り替えるスクリプト
 window.addEventListener('DOMContentLoaded', function() {
   const gif = document.getElementById('bgGif');

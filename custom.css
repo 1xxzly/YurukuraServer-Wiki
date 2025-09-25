@@ -181,6 +181,13 @@ body.news-page {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
+body.kakuchochest-page {
+  background-image: url('advancedchest.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 @media (max-width: 600px) {
   .top-buttons {
     display: none !important;
