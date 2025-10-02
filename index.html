@@ -152,6 +152,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <div style="width:100%;text-align:center;margin:60px 0 24px 0;">
 </div>
 <p><img id="bgImage" class="bg-image" src="image.png" alt="背景画像" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;" /></p>
+<!-- 画面右下にゆるクラちゃん画像を配置 -->
+<p><img src="yurukuchan.png" alt="ゆるくちゃん" style="position:fixed;bottom:-35px;right:5px;height:500px;width:auto;z-index:1000;background:transparent !important;border:none !important;outline:none !important;box-shadow:none !important;" /></p>
+<!-- ゆるクラちゃんの上に左斜めテキスト -->
+<div style="position:fixed;bottom:350px;right:280px;z-index:1050;color:#fff;font-size:24px;font-weight:bold;text-shadow:2px 2px 4px rgba(0,0,0,0.8);transform:rotate(0deg);pointer-events:none;">ガイド：ゆるくちゃん</div>
+
 <!-- BGM自動再生・ON/OFFボタン（全ページ共通UI用） -->
 <!--
 <audio id="bgm" autoplay loop style="display:none;">
@@ -425,5 +430,5 @@ if (jukeboxBtn) {
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-10-02 13:52:38.358334+00:00
+Build Date UTC : 2025-10-02 14:29:45.563034+00:00
 -->
