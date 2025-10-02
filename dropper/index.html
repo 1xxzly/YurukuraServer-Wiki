@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Protection - ゆるっとクラフトサーバー公式Wiki</title>
+        <title>Dropper - ゆるっとクラフトサーバー公式Wiki</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -97,7 +97,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link">土地の保護機能について</a>
+            <li class="nav-item" data-bs-level="1"><a href="#q" class="nav-link">Q.ザ・ドロッパーとは？</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -106,56 +106,24 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<script>document.body.classList.add('protection-page');</script>
+<script>document.body.classList.add('minigame-page');</script>
 
 <!-- protectionページの内容はここに記述してください -->
-<h1 id="_1"><span style="color:black;">土地の保護機能について</h1>
-<p><span style="font-size:1em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;">一箇所に付き16マス(1チャンク)。</p>
+
+<h1 id="q"><span style="font-size:1em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;"> <span style="color:black;">Q.ザ・ドロッパーとは？</h1>
 <p><button id="toggle-all-btn" style="margin:16px 0; padding:6px 18px; font-size:1em; border-radius:6px; border:1px solid #888; background:#fafafa; cursor:pointer;">全ての文字を非表示</button></p>
 <div id="devilfruit-content">
  <span style="color:white;">
 <!-- ここから下に保護機能の詳細説明を記述 -->
 
 
-<span style="font-size:1.2em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;">土地保護のやり方について説明します。(スマホで見ている方は横向きにしてください。)<br>
-☆まずはじめに、最初に保護領域を設定する必要があります。<br>
-1.メニューブックから土地保護メニューを開きます。<br>
-2.グローストーンを押すと立ってる場所16マスが即座に保護され完了です。<br>
-3.保護された場所は可視化されないので、レッドストーントーチの【土地保護の範囲を表示】で確認しましょう。<br>
-===============================================================================================================<br>
-✔次に、自分の保護領域にメンバーを招待する側の方法と、された側の承認方法について説明します。<br>
-0.まず先にメンバーの招待の方法について説明します。<br>
-1.領域一覧にある招待したい領域を選んで開きます。<br>
-2.一番左にあるスティーブの頭の【プレイヤー管理】を開きます。<br>
-3.次に、本と羽根ペンの【招待中プレイヤー】を開いたら、<br>
---【プレイヤーを招待する】を押し、チャットで招待したいプレイヤーIDを入力で招待(は)完了です。<br>
-===============================================================================================================<br>
-✔次は招待された側の承認方法についての説明ですね！<br>
-1.招待の承認をするためにはコマンドを打つ必要があります。/homestead accept [招待してくれた人のIDまたは領域名]<br>
-2.土地保護メニューにある黄緑色の染料を押すと、承認するためのコマンドが/homestead acceptと、<br>
---と出てきますので、わからなくなった時は押しましょう。<br>
-===============================================================================================================<br>
-🚩※重要※ フラグ設定について説明します。<br>
-1.招待もしておらず、自分だけの保護領域の場合：【フラグ管理】から様々な可否設定を行えます。例えばドア開閉のみ許可など。<br>
-2.自分の保護領域に招待したプレイヤーがいる場合：最初は招待し、メンバーになっても殆どが保護状態であるため、<br>
-3.設定が個別必要になります。【プレイヤー管理】を開き、信頼済みプレイヤーからメンバーのフラグ管理を個別に設定する、<br>
---必要があり、これを行うまでメンバーは保護が維持されたまま何も出来ませんので必ず行うようにしてください。<br>
-===============================================================================================================<br>
-🏠️ 土地のレンタルと販売について説明します。<br>
-0.はじめにレンタルに出す方法を説明します！<br>
-1.自分の保護領域(限定)で看板を設置し、下記のように書き込みます。<br>
-|&nbsp;&nbsp;&nbsp;[Rent]&nbsp;&nbsp;&nbsp;| ←レンタルを意味します(1行目)<br>
-|&nbsp;Yurukura&nbsp;&nbsp;&nbsp;| ←保護領域名(2行目)<br>
-|&nbsp;&nbsp;&nbsp;1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ←レンタル価格(3行目)<br>
-|&nbsp;&nbsp;&nbsp;&nbsp;7d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ←レンタル期間(4行目)<br>
-<br>
-💰️土地の販売に出す方法を説明します！<br>
-1.自分の保護領域(限定)で看板を設置し、下記のように書き込みます。<br>
-|&nbsp;&nbsp;&nbsp;[Sell]&nbsp;&nbsp;&nbsp;| ←販売を意味します(1行目)<br>
-|&nbsp;Yurukura&nbsp;&nbsp;&nbsp;| ←保護領域名(2行目)<br>
-|&nbsp;&nbsp;&nbsp;24500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ←販売価格(3行目)<br>
-<br>
-</span></div>
+<span style="font-size:2em; color:black; background:rgba(255,255,255,0.7); border-radius:0.5em; padding:0.3em 0.7em; box-shadow:0 2px 12px #0002; display:inline-block;">ドロッパーには様々なマップがあります。<br><br>
+∴達成するごとに難易度が上がっていきます。<br><br>
+∴目標は障害物を避けながら落下して無事着地することです。<br><br>
+∴ロビーのミニゲームから参加可能です。<br><br>
+∴ドロッパーにはモードがあり、<br>
+∴順番関係なく好きなステージ選んで遊ぶことが出来るモードや<br>
+∴チェックポイントなしの一発勝負など様々です。</div>
             </div>
         </div>
 
